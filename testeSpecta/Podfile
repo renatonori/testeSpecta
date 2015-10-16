@@ -1,0 +1,9 @@
+target  :testeSpecta do
+  pod 'AFNetworking'
+end 
+
+target  :testeSpectaTests do
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'OCMock'
+end
