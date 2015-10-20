@@ -1,9 +1,10 @@
 target  :testeSpecta do
-  pod 'AFNetworking'
+  pod 'AFNetworking', :inhibit_warnings => true
 end 
 
 target  :testeSpectaTests do
-  pod 'Specta'
-  pod 'Expecta'
-  pod 'OCMock'
+  	pod 'Specta', :inhibit_warnings => true
+  	pod 'Expecta'
+	pod 'OCMock'
+	pod 'TLJsonFactory'
 end

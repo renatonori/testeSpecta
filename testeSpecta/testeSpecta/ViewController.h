@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITextField *nameTextField;
 
+@property (strong, nonatomic) IBOutlet UIButton *addButton;
+
+@property (strong, nonatomic) IBOutlet UITableView *namesTableView;
+
+@property (strong, nonatomic) NSArray *dataArray;
 
 @end
 
